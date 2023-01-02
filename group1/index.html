@@ -45,7 +45,7 @@
 <label><input type="radio" name="fruit" >35</label>
 <label><input type="radio" name="fruit" >36</label>
         </div>
-        <div>
+        <div id="decide">
             <input type="button" value="お題を表示する" id="checkButton">
         </div>
         <h1 id="odai">お題が表示されます</h1>
@@ -56,20 +56,48 @@
 </html>
 
 <style>
-label{
-    font-size: large;
-    height: 120px;
-    width: 100px;
-    margin: 30px;
-}
-
 
 #fruit_parent {
-    height: 150px;
+    height: 100px;
     width: 400px;
     white-space: nowrap;
     overflow-x: scroll;   
     vertical-align: middle; 
+    border: 10px;
+    background-color: antiquewhite;
+}
+
+label{
+    font-size: large;
+    margin: 30px;
+}
+
+h1,p{
+    text-align:center;
+}
+
+#decide{
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  overflow-y: scroll;
+  margin-top: 30px;
+}
+
+div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+input{
+    
+    text-align:center;
+}
+
+body{
+    background-color: #eae1cf;
 }
 
 

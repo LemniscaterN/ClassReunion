@@ -8,43 +8,77 @@
     <body>
         <h1>お題のサンプルです</h1>
         <div id="fruit_parent">
-<label><input type="radio" name="fruit" >1</label>
-<label><input type="radio" name="fruit" >2</label>
-<label><input type="radio" name="fruit" >3</label>
-<label><input type="radio" name="fruit" >4</label>
-<label><input type="radio" name="fruit" >5</label>
-<label><input type="radio" name="fruit" >6</label>
-<label><input type="radio" name="fruit" >7</label>
-<label><input type="radio" name="fruit" >8</label>
-<label><input type="radio" name="fruit" >9</label>
-<label><input type="radio" name="fruit" >10</label>
+            <label><input type="radio" name="fruit" >1</label>
+            <label><input type="radio" name="fruit" >2</label>
+            <label><input type="radio" name="fruit" >3</label>
+            <label><input type="radio" name="fruit" >4</label>
+            <label><input type="radio" name="fruit" >5</label>
+            <label><input type="radio" name="fruit" >6</label>
+            <label><input type="radio" name="fruit" >7</label>
+            <label><input type="radio" name="fruit" >8</label>
+            <label><input type="radio" name="fruit" >9</label>
+            <label><input type="radio" name="fruit" >10</label>
         </div>
-        <div>
+        
+        <div id="decide">
             <input type="button" value="お題を表示する" id="checkButton">
         </div>
+            
+        
         <h1 id="odai">お題が表示されます</h1>
+        <p><a href="group1/index.html">グループ1のお題はこちら</p>
+        <p><a href="group2/index.html">グループ2のお題はこちら</p>
+        
     </body>
 
-    <a href="group1/index.html">グループ1のお題はこちら</p>
-    <a href="group2/index.html">グループ2のお題はこちら</p>
-    
+
 </html>
 
 <style>
-label{
-    font-size: large;
-    height: 120px;
-    width: 100px;
-    margin: 30px;
-}
+
 
 
 #fruit_parent {
-    height: 150px;
+    height: 100px;
     width: 400px;
     white-space: nowrap;
     overflow-x: scroll;   
     vertical-align: middle; 
+    border: 10px;
+    background-color: antiquewhite;
+}
+
+label{
+    font-size: large;
+    margin: 30px;
+}
+
+h1,p{
+    text-align:center;
+}
+
+#decide{
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  overflow-y: scroll;
+  margin-top: 30px;
+}
+
+div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+input{
+    
+    text-align:center;
+}
+
+body{
+    background-color: #eae1cf;
 }
 
 
