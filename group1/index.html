@@ -1,13 +1,13 @@
 <html>
     <head>
-        <title>グループ1用のお題</title>
+        <title>グループ1のお題</title>
         <link rel="stylesheet" type="text/css" href="./main.css" />
     </head>
 
 
     <body>
         <h1>グループ1用</h1>
-        <div id="fruit_parent">
+        <div id="fruit_parent" >
 <label><input type="radio" name="fruit" >1</label>
 <label><input type="radio" name="fruit" >2</label>
 <label><input type="radio" name="fruit" >3</label>
@@ -58,23 +58,21 @@
 <style>
 label{
     font-size: large;
-    height: 100px;
+    height: 120px;
     width: 100px;
-    margin: 10px;
-    
+    margin: 30px;
 }
 
-label > input{
-    font-size: large;
-    background-color: aqua;
-    border-radius: 10px;
-}
 
 #fruit_parent {
+    height: 150px;
     width: 100%;
     white-space: nowrap;
-    overflow-x: scroll;    
+    overflow-x: scroll;   
+    vertical-align: middle; 
 }
+
+
 </style>
 
 <script>
@@ -82,6 +80,7 @@ var topics = "サッカー、野球、ボウリング、バレー、テニス、
 歌舞伎、サンタクロース、リレー、パントマイム、闘牛、魚、ドラえもん、教師、サソリ、漫才、\
 コタツ、電車、ラーメン、化粧、マッチ、天使、回転寿司、画家、跳び箱、鉄棒\
 タコ、サザエさん、円周率、名探偵コナン、プリクラ、ぎっくり腰、脚立、ハシゴ、YouTuber、カラオケ、宇宙";
+
 
 const words = topics.split('、');
 // alert(words.length+words);

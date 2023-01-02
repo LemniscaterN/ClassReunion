@@ -7,7 +7,7 @@
 
     <body>
         <h1>グループ2用</h1>
-        <div id="fruit_parent">
+        <div id="fruit_parent" >
 <label><input type="radio" name="fruit" >1</label>
 <label><input type="radio" name="fruit" >2</label>
 <label><input type="radio" name="fruit" >3</label>
@@ -58,29 +58,27 @@
 <style>
 label{
     font-size: large;
-    height: 100px;
+    height: 120px;
     width: 100px;
-    margin: 10px;
-    
+    margin: 30px;
 }
 
-label > input{
-    font-size: large;
-    background-color: aqua;
-    border-radius: 10px;
-}
 
 #fruit_parent {
+    height: 150px;
     width: 100%;
     white-space: nowrap;
-    overflow-x: scroll;    
+    overflow-x: scroll;   
+    vertical-align: middle; 
 }
+
+
 </style>
 
 <script>
 var topics = "餅つき、水泳、医者、剣道、ドラム、うさぎ、\
 タイヤ、ラーメン、羽付き、福笑い、ダンベル、ボディビルダー、りんご、懐中電灯、トランプ、\
-魔法使い、書初め、パンの耳、ピザ、落とし穴、改札、ヘリコプター、？、お化け、輪ゴム、\
+魔法使い、書初め、パンの耳、ピザ、落とし穴、改札、ヘリコプター、？（はてなマーク）、お化け、輪ゴム、\
 公衆電話、ベルコンベアー、空港の金属探知機、日めくりカレンダー、ハリセンボン、キリン、裁判、今年の漢字を書く清水寺の住職、スプリンクラー、ATM、(バイクの）サイドカー";
 
 const words = topics.split('、');
