@@ -1,12 +1,12 @@
 <html>
     <head>
         <title>グループ2のお題</title>
-        <link rel="stylesheet" type="text/css" href="./main.css" />
     </head>
 
 
     <body>
         <h1>グループ2用</h1>
+        <p>お題は1〜50まで。序盤が簡単で、後半はかなり難しいお題もあります。</p>
         <div id="fruit_parent" >
 <label><input type="radio" name="fruit" >1</label>
 <label><input type="radio" name="fruit" >2</label>
@@ -44,6 +44,20 @@
 <label><input type="radio" name="fruit" >34</label>
 <label><input type="radio" name="fruit" >35</label>
 <label><input type="radio" name="fruit" >36</label>
+<label><input type="radio" name="fruit" >37</label>
+<label><input type="radio" name="fruit" >38</label>
+<label><input type="radio" name="fruit" >39</label>
+<label><input type="radio" name="fruit" >40</label>
+<label><input type="radio" name="fruit" >41</label>
+<label><input type="radio" name="fruit" >42</label>
+<label><input type="radio" name="fruit" >43</label>
+<label><input type="radio" name="fruit" >44</label>
+<label><input type="radio" name="fruit" >45</label>
+<label><input type="radio" name="fruit" >46</label>
+<label><input type="radio" name="fruit" >47</label>
+<label><input type="radio" name="fruit" >48</label>
+<label><input type="radio" name="fruit" >49</label>
+<label><input type="radio" name="fruit" >50</label>
         </div>
         <div id="decide">
             <input type="button" value="お題を表示する" id="checkButton">
@@ -105,14 +119,15 @@ body{
 </style>
 
 <script>
-var topics = "餅つき、水泳、医者、剣道、ドラム、うさぎ、\
-タイヤ、ラーメン、羽付き、福笑い、ダンベル、ボディビルダー、りんご、懐中電灯、トランプ、\
-魔法使い、書初め、パンの耳、ピザ、落とし穴、改札、ヘリコプター、？（はてなマーク）、お化け、輪ゴム、\
-公衆電話、ベルコンベアー、空港の金属探知機、日めくりカレンダー、ハリセンボン、キリン、裁判、今年の漢字を書く清水寺の住職、スプリンクラー、ATM、(バイクの）サイドカー";
+var topics = "餅つき、水泳、医者、剣道、ドラム、うさぎ、寿司、ハンガー、消しゴム、ピアノ、\
+タイヤ、ラーメン、羽付き、福笑い、ダンベル、りんご、懐中電灯、トランプ、ティッシュ、カーテン、ボディビルダー、階段、へび、折り畳み傘、\
+魔法使い、書初め、パンの耳、ピザ、落とし穴、改札、ヘリコプター、？（はてなマーク）、お化け、\
+公衆電話、ベルコンベアー、空港の金属探知機、日めくりカレンダー、ハリセンボン、キリン、裁判、スプリンクラー、ATM、(バイクの）サイドカー、\
+太陽、台湾、初詣、インクの切れかけのペン、地図、大谷翔平、今年の漢字を書く清水寺の住職";
 
 const words = topics.split('、');
 // alert(words.length+words);
-//alert(words.length)
+// alert(words.length)
 
 
 function butotnClick(){
@@ -120,7 +135,7 @@ function butotnClick(){
   for (let i = 0; i < len; i++){
     if (fruitRadio.item(i).checked){
       //alert(i+":"+words[i]);
-      document.getElementById("odai").innerText = "お題は「"+words[i]+"」";
+      document.getElementById("odai").innerText = "お題"+(i+1)+"は「"+words[i]+"」";
     }
   }
 }

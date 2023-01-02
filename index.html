@@ -1,12 +1,14 @@
 <html>
     <head>
-        <title>お題(サンプル)</title>
+        <title>ジェスチャーゲームお題サンプル</title>
         <link rel="stylesheet" type="text/css" href="./main.css" />
     </head>
 
 
     <body>
-        <h1>お題のサンプルです</h1>
+        <h1>ジェスチャーゲーム</h1>
+        <p>お題をサイレントで表現しよう！<br>メンバーから正解が出るかパスで交代。3人連続パスでお題交代。<br>時間内にいくつ回答できるかチャレンジ！</p>
+        <h2>お題サンプル</h2>
         <div id="fruit_parent">
             <label><input type="radio" name="fruit" >1</label>
             <label><input type="radio" name="fruit" >2</label>
@@ -26,6 +28,8 @@
             
         
         <h1 id="odai">お題が表示されます</h1>
+
+        <p style="font-weight: bold;">! 以下のリンクは指示があるまで開かないでください !</p>
         <p><a href="group1/index.html">グループ1のお題はこちら</p>
         <p><a href="group2/index.html">グループ2のお題はこちら</p>
         
@@ -53,7 +57,7 @@ label{
     margin: 30px;
 }
 
-h1,p{
+h1,h2,p{
     text-align:center;
 }
 
@@ -97,7 +101,7 @@ function butotnClick(){
   for (let i = 0; i < len; i++){
     if (fruitRadio.item(i).checked){
       //alert(i+":"+words[i]);
-      document.getElementById("odai").innerText = "お題は「"+words[i]+"」";
+      document.getElementById("odai").innerText = "お題"+(i+1)+"は「"+words[i]+"」";
     }
   }
 }
